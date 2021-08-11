@@ -3,21 +3,21 @@
 i{
   padding-right: 10px;
 }
+ /* Heading font */
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+}
 
-h1
-{
-  font-family: 'Montserrat', sans-serif;
+h1{
   font-size: 3.5rem;
   line-height: 1.5;
 }
 
 h2{
-  font-family: 'Montserrat', sans-serif;
   font-size: 3rem;
   line-height: 1.5;
 }
 h3{
-  font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -28,7 +28,9 @@ p
 }
 
 #features{
-  padding: 7% 15%;
+  position: relative;
+  padding: 7% 15% ;
+  background-color: #fff;
 }
 
 #press{
@@ -37,8 +39,12 @@ p
   text-align: center;
 }
 
-#test{
-  padding: 10% 16% 0 16% ;
+#pricing{
+  padding:  10% 16% 0 16% ;
+}
+
+#testimn{
+
   font-family: 'Montserrat',sans-serif;
   font-size: 3rem;
   line-height: 1.5;
@@ -50,15 +56,39 @@ p
 #title {
   background-color: #7C83FD;
   color: #ffff;
+  z-index: -1;
+  position: relative;
+}
+
+.card{
+  text-align: center;
+  padding: 0 5% 0 0;
+}
+
+.cardbody1{
+  padding-bottom: 30%;
+}
+
+.crd{
+  margin-top: 10%;
+}
+
+.card-body{
+  text-align: center;
+  font-family: 'Montserrat',sans-serif;
+  padding: 30% 0% 50% ;
+}
+
+.carousel-inner{
+  padding: 10% 16% 0 16% ;
 }
 
 .container-fluid{
-  padding: 3% 15%;
+  padding: 3% 15% 6%;
 }
 
 .feature{
   text-align:  center;
-  padding: 7%;
 }
 
 .icon{
@@ -95,17 +125,32 @@ p
 }
 
 .title-img{
+  position: absolute;
   transform: rotate(25deg);
   width: 60%;
+  right: 20%;
 }
 
-.test-name{
+.testimn-name{
   font-size: 25%;
   padding-left: 1rem;
 }
 
-.test-img{
+.testimn-img{
   border-radius: 50%;
   width: 10%;
-  margin-top: 1rem;
+  margin: 1rem 0 2rem 0;
+
+}
+
+@media (max-width:1090px) {
+  .title{
+    text-align: center;
+  }
+
+  .title-img{
+    padding-top: 5%;
+    position: static;
+    transform: rotate(0deg);
+  }
 }
