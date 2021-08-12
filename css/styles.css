@@ -68,8 +68,6 @@ p
 #title {
   background-color: #7C83FD;
   color: #ffff;
-  z-index: -1;
-  position: relative;
 }
 
 .card{
